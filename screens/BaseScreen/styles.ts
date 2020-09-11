@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { Colors } from '../../assets/Colors';
+import { StyleSheet } from 'react-native';
 
 export const Background = styled.View`
   flex: 1;
@@ -36,3 +37,13 @@ export const RightButtonContainer = styled.View`
   padding-right: 20;
   right: 0;
 `;
+
+export const ovCont = StyleSheet.create({
+  overlaycontainer:{
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: '#000',
+    opacity:0.8,
+    justifyContent:"center",
+    alignItems:"center" 
+  }
+});
